@@ -1,0 +1,107 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    background: #fff491;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.message {
+    font-size: 2em;
+    color: #660033;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    max-width: 80%;
+    background-color: #ffffff8c;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.name {
+    font-size: 1.8em;
+    color: #4A0E4E;
+    margin-bottom: 30px;
+}
+
+.ticket {
+    background-color: #660033;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    text-align: center;
+    transform: rotate(-5deg);
+    transition: transform 0.3s ease;
+    max-width: 300px;
+    font-family: 'Courier New', monospace;
+    position: relative;
+}
+
+.ticket:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+.ticket h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.ticket p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.ticket .admit {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.ticket::before, .ticket::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffea2d;
+    border-radius: 50%;
+}
+
+.ticket::before {
+    top: -10px;
+    left: -10px;
+}
+
+.ticket::after {
+    bottom: -10px;
+    right: -10px;
+}
+
+#flower-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.flower {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
